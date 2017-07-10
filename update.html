@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Kurir</title>
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/metisMenu.css" rel="stylesheet">
+    <link href="assets/css/sb-admin-2.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="assets/css/desain.css">
+
+
+</head>
+<body>
+<div id="header" >
+    <div class="row">
+        <div class="container-fluid" id="container">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                    <div id="logo"> 
+                    <img src="images/2.png" width="100pt" style="float: left ">
+                    </div>
+                        <h1 style="color:black" ><font face="Bernard MT Condensed" style="font-size: 40pt">Sistem Informasi Ekspedisi </font> </h1>
+
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+<div id="navigasikiri">
+  <div class="row">
+    <nav id="primary_nav_wrap">     
+    </nav>
+  </div>
+</div>
+<div id="navigasi" >
+    <div class="row">
+        <div class="col-sm-2" style="float: right">
+            <nav id="primary_nav_wrap">
+               <ul>
+                  <li><a href="loginkaryawan.html">Log Out</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="wrapper">
+       
+            <div class="sidebar"  >
+            <div id="profil" style="min-height: 501px">
+           <img src="images/administrator-256.png" height="100px" >Nama : Abdinal           
+             <ul class="nav nav-pills nav-stacked" id="navi">
+                    <li role="presentation" ><a href="kurir.html"><button type="button" class="btn btn-primary btn-lg btn-block">Profil</button></a></li>
+                    <li role="presentation" ><a href="satuspengirimankurir.html" class="active"><button type="button" class="btn btn-primary btn-lg btn-block">Status Pengiriman</button></a></li>
+                    
+                </ul>
+
+            </div>
+
+                          </div>
+        <div id="page-wrapper">
+                <div class="container-fluid" id="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="page-header">Update Pengiriman</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <form class="form-horizontal" role="form" action="satuspengirimankurir.html" >
+                                <div class="form-group">
+                                    <label for="Id_transaksi" class="col-sm-3">Id_transaksi</label>
+                                        <div class="col-sm-5">
+                                          345678
+                                        </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Status" class="col-sm-3">Status</label>
+                                        <div class="col-sm-5">
+                                            <input type="text" class="form-control" id="Nama" value="Terkirim">
+                                        </div>
+                                </div>    
+                                <div class="form-group">
+                                    <label for="Tanggal" class="col-sm-3">Tanggal</label>
+                                        <div class="col-sm-5">
+                                          <input type="date" name="">
+                                        </div>
+                                </div>                       
+                                <div class="form-group" style="padding-left: 270pt">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                      <button type="Sumbit" class="btn btn-default" id="alert">Simpan</button>
+                                    </div>
+                                </div>
+                             </form>
+                        </div>
+                     </div>
+                </div>
+        </div>
+    </div>
+           
+<footer>
+    <div id="footer">
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+              <p  align="center" >@CopyRight Sistem Informasi 2015 </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+ 
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    <script src="assets/js/sb-admin-2.js"></script>
+    <script>
+        $('#alert').click(function(){
+            alert('Update Berhasil');
+        })
+    </script>
+
+</body>
+
+</html>

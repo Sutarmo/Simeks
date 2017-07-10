@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Operator</title>
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/metisMenu.css" rel="stylesheet">
+    <link href="assets/css/sb-admin-2.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="assets/css/desain.css">
+
+
+</head>
+<body>
+<div id="header" >
+    <div class="row">
+        <div class="container-fluid" id="container">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                    <div id="logo"> 
+                    <img src="images/2.png" width="100pt" style="float: left ">
+                    </div>
+                        <h1 style="color:black" ><font face="Bernard MT Condensed" style="font-size: 40pt">Sistem Informasi Ekspedisi </font> </h1>
+
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+<div id="navigasikiri">
+  <div class="row">
+    <nav id="primary_nav_wrap">     
+    </nav>
+  </div>
+</div>
+<div id="navigasi" >
+    <div class="row">
+        <div class="col-sm-2" style="float: right">
+            <nav id="primary_nav_wrap">
+               <ul>
+                  <li><a href="loginkaryawan.html">Log Out</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="wrapper">
+       
+            <div class="sidebar"  >
+            <div id="profil" style="min-height: 501px">
+           <img src="images/administrator-256.png" height="100px" >Nama : Febri Andrian           
+             <ul class="nav nav-pills nav-stacked" id="navi">
+                   <li role="presentation" ><a href="operator.html" ><button type="button" class="btn btn-primary btn-lg btn-block">Profil</button></a></li>
+                    <li role="presentation" ><a href="transaksi.html"><button type="button" class="btn btn-primary btn-lg btn-block">Transaksi</button></a></li>
+                    <li role="presentation" ><a href="datakurir.html"><button type="button" class="btn btn-primary btn-lg btn-block">Data Kurir</button></a></li>
+                     <li role="presentation" ><a href="tarifpengiriman.html"><button type="button" class="btn btn-primary btn-lg btn-block">Tarif Pengiriman</button></a></li>
+                     <nav id="primary_nav_wrap" style="margin-left: 11pt">
+                       <ul>
+                          <li role="presentation"><button type="button" class="btn btn-primary btn-lg btn-block"><a href="#">Laporan</a></button>
+                            <ul>
+                              <li class="btn btn-primary btn-lg btn-block"><a href="laporanbarang.html"><h5>Laporan Pengiriman Barang</h5></a></li>
+                              <li class="btn btn-primary btn-lg btn-block"><a href="laporankeuangan.html"><h5>Laporan Keuangan</h5></a></li>
+                             </ul>
+                          </li>
+                    </nav>
+                </ul>
+
+            </div>
+
+                          </div>
+
+    
+                
+            </div>
+            <div id="page-wrapper">
+                <div class="container-fluid" id="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="page-header" >Edit Kurir</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-sm-12">
+                        <form class="form-horizontal" role="form" action="datakurir.html">
+                            <div class="form-group">
+                                <label for="Id_Kurir" class="col-sm-3">Id_Kurir</label>
+                                    <div class="col-sm-5">
+                                        3425622
+                                    </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="Nama_kurir" class="col-sm-3">Nama</label>
+                                    <div class="col-sm-5">
+                                        <input type="text" class="form-control" id="Nama" placeholder="">
+                                    </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="NIK" class="col-sm-3">NIK</label>
+                                    <div class="col-sm-5">
+                                        <input type="text" class="form-control" id="Nama" placeholder="">
+                                    </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="jeniskelaminkur" class="col-sm-3">Jenis Kelamin</label>
+                                    <div class="col-sm-5">
+                                        <label class="radio-inline">
+                                    <input type="radio" name="pilihanjeniskelamin" id="jeniskelamin1" value="Pria">Pria
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="pilihanjeniskelamin" id="jeniskelamin2" value="Wanita">Wanita
+                                </label> 
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="Alamat_kurir" class="col-sm-3">Alamat</label>
+                                    <div class="col-sm-5">
+                                        <textarea rows="4" cols="40">
+                                          
+                                        </textarea>
+                                    </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="telp_kurir" class="col-sm-3">No. Handphone</label>
+                                    <div class="col-sm-5">
+                                        <input type="text" class="form-control" id="Nama" placeholder="">
+                                    </div>
+                            </div>
+
+                           
+                            <div class="form-group" style="padding-left: 270pt">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                  <button type="Sumbit" class="btn btn-default">Simpan</button>
+                                </div>
+                            </div>
+
+
+
+                        </form>
+        
+            </div>
+                </div>
+            </div>
+        </div> 
+<footer>
+    <div id="footer">
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+               <p  align="center" >@CopyRight Sistem Informasi 2015 </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+ 
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    <script src="assets/js/sb-admin-2.js"></script>
+    <script>
+    </script>
+
+</body>
+
+</html>
