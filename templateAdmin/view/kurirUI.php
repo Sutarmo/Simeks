@@ -12,9 +12,11 @@ class KurirUI extends View
 
 		public function lihatKurir()
 	{
-		$nama="Febri";
-		include_once 'pages/kurir.php';
-		$this->end();
+		 include_once 'model/kurir.php';
+		 $kr = new kurir();
+		 $isi_kurir = $kr->ambilkurir();
+		 include_once 'pages/kurir.php';
+		 $this->end();
 	}
 		public function formTambah()
 	{

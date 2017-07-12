@@ -38,44 +38,24 @@
                                   </tr>
                               </thead>
                               <tbody style="font-size: 9pt">
-                                <tr>
-                                    <td>123123123</td>
-                                    <td>Tarmo</td>
-                                    <td>123112311</td>
-                                    <td>Pria</td>
-                                    <td>Jl.pdomoro</td>
-                                    <td>0812 1231231</td>
-                                    <td style="text-align: center">
-                                    <a href="edit_kurir.php" class="btn btn-primary btn-xs">Edit</a>
-                                    <a href="menghapus_kurir.php" class="btn btn-primary btn-xs">Hapus</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td style="text-align: center">
-                                    <a href="#" class="btn btn-primary btn-xs">Edit</a>
-                                    <a href="#" class="btn btn-primary btn-xs">Hapus</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td style="text-align: center">
-                                    <a href="#" class="btn btn-primary btn-xs">Edit</a>
-                                    <a href="#" class="btn btn-primary btn-xs">Hapus</a>
-                                    </td>
-                                </tr>
-                                
-
+            
+                                 <?php 
+                                     $i=1;
+                                     foreach ($isi_kurir as $ik) { ?>
+                                            <tr>
+                                                <td><?= $Id_kurir ?></td>
+                                                <td><?= $nama_kurir ?></td>
+                                                <td><?= $Id_kurir ?></td>
+                                                <td><?= $nik ?></td>
+                                                <td><?= $jenis_kelamin ?></td>
+                                                <td><?= $alamat_kurir ?></td>
+                                                <td><?= $telepon ?></td>
+                                                <td><a href="edit_kurir.php?id=<?php echo $ik['id_kurir']?>">Edit</a></td>
+                                                <td><a href="menghapus_kurir.php?id=<?php echo $ik['id_kurir']?>">Hapus</a></td>
+                                            </tr>
+                                            <?php 
+                                                $i++;
+                                            } ?>
                               </tbody>
                             </table>
                           </div>
