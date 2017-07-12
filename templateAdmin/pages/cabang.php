@@ -37,7 +37,7 @@
                                             <td><?= $cb['alamat'] ?></td>
                                             <td><?= $cb['telepon'] ?></td>
                                     <td style="text-align: center">
-                                    <a href="melihat_detail_cabang.php?cb=<?php echo $id_cabang['id_cabang']?>" class="btn btn-primary btn-xs">Detail</a>
+                                    <a href="melihat_detail_cabang.php?cb=<?php echo $cb['id_cabang']?>" class="btn btn-primary btn-xs">Detail</a>
                                     <a href="menghapus_cabang.php" class="btn btn-primary btn-xs">Hapus</a>
                                     </td>
 

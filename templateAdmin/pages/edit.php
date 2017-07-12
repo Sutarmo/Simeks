@@ -11,7 +11,7 @@
                             <div class="form-group">
                                 <label for="Id_cabang" class="col-sm-3">Id_Cabang</label>
                                     <div class="col-sm-5">
-                                        6534232
+                                        <?php echo $id_cabang; ?>
                                     </div>
                             </div>
                             <div class="form-group">

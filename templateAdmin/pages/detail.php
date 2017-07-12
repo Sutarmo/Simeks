@@ -14,10 +14,13 @@
                     <div class="row">
                    
                         <div class="col-sm-12">
-                                                    <form class="form-horizontal" role="form">
+                            <form class="form-horizontal" role="form">
                                 <div class="form-group">
                                     <div class="form-group">
 
+ <?php 
+    foreach ($data as $data_cabang) {
+ ?>
                                         <label  class="col-sm-3 ">Nama Cabang</label>
                                             <div class="col-sm-5">
                                                 : <?= $data_cabang['nama'] ?>
@@ -41,6 +44,7 @@
                                                 : <?= $data_cabang['telepon'] ?>
                                             </div>
                                     </div>
+                                    <?php } ?>
                                 </div>
                                <a href="mengubah_cabang.php" class="btn btn-primary"> Edit</a>
                             </form>

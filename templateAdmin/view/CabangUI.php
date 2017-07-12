@@ -51,10 +51,6 @@ class CabangUI extends View
 		$this->end();
 	}
 
-
-
-	
-
 }
 
 
