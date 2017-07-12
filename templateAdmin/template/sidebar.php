@@ -6,7 +6,7 @@
              <ul class="nav nav-pills nav-stacked" id="navi">
                     <li role="presentation" ><a href="index.php" ><button type="button" class="btn btn-primary btn-lg btn-block">Profil</button></a></li>
                     
-                    <li role="presentation" ><a href="mengelola_cabang.php"><button type="button" class="btn btn-primary btn-lg btn-block">Data Cabang</button></a></li>
+                    <li role="presentation" ><a href="melihat_cabang.php"><button type="button" class="btn btn-primary btn-lg btn-block">Data Cabang</button></a></li>
                      <li role="presentation" ><a href="tarifpengiriman.html"><button type="button" class="btn btn-primary btn-lg btn-block">Data Tarif</button></a></li>
                      <nav id="primary_nav_wrap" style="margin-left: 11pt">
                        <ul>

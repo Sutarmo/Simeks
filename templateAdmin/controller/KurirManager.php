@@ -10,8 +10,8 @@ class KurirManager extends Controller
 	{
 		include_once 'model/Jenis_Kelamin.php';
 		$jk  = new Jenis_Kelamin();
-		$isi_jeniskelamin = $jk->getDataJenisKelamin();
-		return $isi_jeniskelamin;
+		$daftar_jeniskelamin = $jk->getDataJenisKelamin();
+		return $daftar_jeniskelamin;
 	}
 	public function inputKurir()
 	{

@@ -14,35 +14,37 @@
                     <div class="row">
                    
                         <div class="col-sm-12">
-                            <form class="form-horizontal" role="form">
+                                                    <form class="form-horizontal" role="form">
                                 <div class="form-group">
                                     <div class="form-group">
+
                                         <label  class="col-sm-3 ">Nama Cabang</label>
                                             <div class="col-sm-5">
-                                                : PontianakSime
+                                                : <?= $data_cabang['nama'] ?>
                                             </div>
                                     </div>
                                     <div class="form-group">
                                         <label  class="col-sm-3 ">Id_cabang</label>
                                             <div class="col-sm-5">
-                                                : 120371
+                                                : <?= $data_cabang['id_cabang'] ?>
                                             </div>
                                     </div>
                                     <div class="form-group">
                                         <label  class="col-sm-3 ">Alamat</label>
                                             <div class="col-sm-5">
-                                                : Jl. pontianak
+                                                : <?= $data_cabang['alamat'] ?>
                                             </div>
                                     </div>
                                     <div class="form-group">
                                         <label  class="col-sm-3 ">Telepon</label>
                                             <div class="col-sm-5">
-                                                : 0812 12391123
+                                                : <?= $data_cabang['telepon'] ?>
                                             </div>
                                     </div>
                                 </div>
                                <a href="mengubah_cabang.php" class="btn btn-primary"> Edit</a>
                             </form>
+                            
                         </div>
                     </div>
                 

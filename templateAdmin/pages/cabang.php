@@ -28,33 +28,25 @@
                                   </tr>
                               </thead>
                               <tbody style="font-size: 9pt">
-                                <tr>
-                                    <td>Pontianak</td>
-                                    <td>jl.pontanak</td>
-                                    <td>0812 18371831</td>
+                              <?php
+                                    $i=1;
+                                    foreach ($isi_cabang as $cb) { ?>
+                                        <tr>
+                                        
+                                            <td><?= $cb['nama'] ?></td>
+                                            <td><?= $cb['alamat'] ?></td>
+                                            <td><?= $cb['telepon'] ?></td>
                                     <td style="text-align: center">
-                                    <a href="melihat_detail_cabang.php" class="btn btn-primary btn-xs">Detail</a>
+                                    <a href="melihat_detail_cabang.php?cb=<?php echo $id_cabang['id_cabang']?>" class="btn btn-primary btn-xs">Detail</a>
                                     <a href="menghapus_cabang.php" class="btn btn-primary btn-xs">Hapus</a>
                                     </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td style="text-align: center">
-                                    <a href="#" class="btn btn-primary btn-xs">Detail</a>
-                                    <a href="#" class="btn btn-primary btn-xs">Hapus</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td style="text-align: center">
-                                    <a href="#" class="btn btn-primary btn-xs">Detail</a>
-                                    <a href="#" class="btn btn-primary btn-xs">Hapus</a>
-                                    </td>
-                                </tr>
+
+
+                                            
+                                        </tr>
+                                        <?php
+                                        $i++;
+                                   } ?>
                                 
 
                               </tbody>

@@ -6,10 +6,6 @@ require_once 'View.php';
 */
 class KurirUI extends View
 {
-	
-
-
-
 		public function lihatKurir()
 	{
 		include_once 'model/Kurir.php';
@@ -19,7 +15,7 @@ class KurirUI extends View
 		$this->end();
 		
 	}
-	public function tampilFormKurir()
+		public function tampilFormKurir()
 	{
 		include_once 'controller/KurirManager.php';
 		$km = new KurirManager();
@@ -27,20 +23,21 @@ class KurirUI extends View
 		include_once 'pages/tambah_kurir.php';
 		$this->end();
 	}
+		public function inputData()
+	 {
+	 	include_once 'controller/KurirManager.php';
+		$km = new KurirManager();
+		$pesan = $km->inputKurir();
+		include_once 'melihat_kurir.php';
+		$this->end();
+	 }
 		public function formTambah()
 	{
 		include_once 'pages/tambah_kurir.php';
 
 		$this->end();
 	}
-	 	public function inputData()
-	 	{
-	 		include_once 'controller/KurirManager.php';
-		$km = new KurirManager();
-		$pesan = $km->inputKurir();
-		include_once 'melihat_kurir.php';
-		$this->end();
-	 	}
+	 	
 		public function editDataKurir()
 	{
 		$nama="Febri";

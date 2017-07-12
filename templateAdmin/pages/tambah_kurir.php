@@ -9,7 +9,7 @@
                     <div class="col-sm-12">
                         <form class="form-horizontal" role="form" action="aksi_tambah_kurir.php" method="POST">
                             <div class="form-group">
-                                <label for="Id_Kurir" class="col-sm-3">Id_Kurir</label>
+                                <label for="Id_kurir" class="col-sm-3">Id_Kurir</label>
                                     <div class="col-sm-5">
                                         <input type="char" class="form-control" id="id_kurir" placeholder="" name="id_kurir">
                                     </div>
@@ -23,12 +23,11 @@
                             <div class="form-group">
                                 <label for="id_jeniskelamin" class="col-sm-3">Jenis Kelamin</label>
                                     <div class="col-sm-5">
+                                    <?php foreach ($daftar_jeniskelamin as $km): ?>
                                         <label class="radio-inline">
-                                    <input type="radio" name="id_jeniskelamin" id="id_jeniskelamin" value="1">Pria
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="id_jeniskelamin" id="id_jeniskelamin" value="2">Wanita
-                                </label>        
+                                    <input type="radio" name="id_jeniskelamin" id="id_jeniskelamin" value="<?php echo $km['id_jeniskelamin'] ?>"><?php echo $km['jenis_kelamin'] ?>
+                                    </label>
+                                    <?php endforeach ?>     
                                     </div>
                             </div>
                             <div class="form-group">
