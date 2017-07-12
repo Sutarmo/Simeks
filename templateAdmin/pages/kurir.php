@@ -12,15 +12,17 @@
                     </div>
                 </div>
                     <div class="row">
-                   
                         <div class="col-sm-12">
                             <div class="form-group" style="padding-left: 380pt">
                                 <div class="col-sm-offset-2 col-sm-10">
-                                 <a href="menambah_kurir.php"> <button type="Sumbit" class="btn btn-default">Tambah Kurir</button></a>
+                                
+                                  <a href="menambah_kurir.php"><button type="Sumbit" class="btn btn-default">Tambah Kurir</button>
+                                 </a>
+                                
                                 </div>
                             </div>
                             </div>
-                            <form class="form-horizontal" role="form" >
+                            <form class="form-horizontal" role="form" method="POST" >
                             
                     <div class="form-group">
                       <label for="data_transaksi" class="col-sm-1 control-label"></label>
@@ -38,44 +40,25 @@
                                   </tr>
                               </thead>
                               <tbody style="font-size: 9pt">
-                                <tr>
-                                    <td>123123123</td>
-                                    <td>Tarmo</td>
-                                    <td>123112311</td>
-                                    <td>Pria</td>
-                                    <td>Jl.pdomoro</td>
-                                    <td>0812 1231231</td>
-                                    <td style="text-align: center">
-                                    <a href="edit_kurir.php" class="btn btn-primary btn-xs">Edit</a>
-                                    <a href="menghapus_kurir.php" class="btn btn-primary btn-xs">Hapus</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td style="text-align: center">
-                                    <a href="#" class="btn btn-primary btn-xs">Edit</a>
-                                    <a href="#" class="btn btn-primary btn-xs">Hapus</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td style="text-align: center">
-                                    <a href="#" class="btn btn-primary btn-xs">Edit</a>
-                                    <a href="#" class="btn btn-primary btn-xs">Hapus</a>
-                                    </td>
-                                </tr>
                                 
-
+                                <?php
+                                    $i=1;
+                                    foreach ($isi_kurir as $kr) { ?>
+                                        <tr>
+                                        
+                                            <td><?= $kr['id_kurir'] ?></td>
+                                            <td><?= $kr['nama'] ?></td>
+                                            <td><?= $kr['nik'] ?></td>
+                                            <td><?= $kr['id_jeniskelamin'] ?></td>
+                                            <td><?= $kr['alamat_kurir'] ?></td>
+                                            <td><?= $kr['telepon'] ?></td>
+                                            <td><a href="ubah_berita.php?id=<?php echo $kr['id_kurir']?>" class="btn btn-primary btn-xs">Edit</a></td>
+                                            <td><a href="ubah_berita.php?id=<?php echo $kr['id_kurir']?>" class="btn btn-primary btn-xs">Hapus</a></td>
+                                        </tr>
+                                        <?php
+                                        $i++;
+                                   } ?>
+                                
                               </tbody>
                             </table>
                           </div>
