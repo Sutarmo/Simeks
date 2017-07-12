@@ -1,7 +1,7 @@
 <?php 
 	
 	$host="localhost";
-	$dbname="simeks";
+	$dbname="simeks2";
 	$username="root";
 	$password="";
 
