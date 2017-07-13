@@ -11,7 +11,7 @@
                             <div class="form-group">
                                 <label for="Id_Kurir" class="col-sm-3">Id_Cabang</label>
                                     <div class="col-sm-5">
-                                        <input type="char" class="form-control" id="Id_cabang" placeholder="" name="id_cabang">
+                                        <!--<input type="char" class="form-control" id="Id_cabang" placeholder="" name="id_cabang">-->
                                     </div>
                             </div>
                             <div class="form-group">

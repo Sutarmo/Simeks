@@ -32,20 +32,22 @@
                                   </tr>
                               </thead>
                               <tbody style="font-size: 9pt">
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Rp.40.000</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                   
-                                    <td></td>
-                                    <td>Rp.20.000</td>
-                                </tr>
+                               <?php
+                                    $i=1;
+                                    foreach ($isi_laporan as $lp) { ?>
+                                        <tr>
+                                        
+                                            <td><?= $lp['tgl_transaksi'] ?></td>
+                                            <td><?= $lp['id_cabangpenerima'] ?></td>
+                                            <td><?= $lp['total_biaya'] ?></td>
+                                        </tr>
+                                        <?php
+                                        $i++;
+                                   } ?>
+                                
                                 <tr>
                                   <td colspan="2" style="text-align: center">Total Biaya</td>
-                                  <td>Rp.60.000</td>
+                                  <td></td>
                                 </tr>
 
                               </tbody>

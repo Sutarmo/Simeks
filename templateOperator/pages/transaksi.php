@@ -7,17 +7,17 @@
                     </div>
                     <div class="row">
                     <div class="col-sm-12">
-                        <form class="form-horizontal" role="form" action="detailtransaksi.php">
+                        <form class="form-horizontal" role="form" action="aksi_transaksi.php" method="POST">
                             <div class="form-group">
-                                <label for="id_transaksi" class="col-sm-3">Id_Transaksi</label>
+                                <label for="id_transaksi" class="col-sm-3"></label>
                                     <div class="col-sm-5">
-                                        <input type="text" class="form-control" id="id_transaksi" placeholder="" name="id_transaksi">
+                                        
                                     </div>
                             </div>
                             <div class="form-group">
-                                <label for="tanggal_transaksi" class="col-sm-3">Tanggal</label>
+                                <label for="tgl_transaksi" class="col-sm-3">Tanggal</label>
                                     <div class="col-sm-5">
-                                        <input type="date" class="form-control" id="tanggal_transaksi" placeholder="" name="tanggal_transaksi">
+                                        <input type="text" class="form-control" id="tgl_transaksi" placeholder="" name="tgl_transaksi">
                                      </div>
                             </div>     
                             <h2 class="page-header">Pengirim</h2>
@@ -39,8 +39,8 @@
                               <label for="kota_pengirim" class="col-sm-3">Kota Pengirim</label>
                               <div class="col-sm-5">
                                   <select class="form-control" name="kota_pengirim">
-                                    <?php foreach ($daftar_kategori as $dk): ?>
-                                      <option value="<?php echo $dk['id_kategori'] ?>"><?php echo $dk['nama_kategori'] ?></option>
+                                    <?php foreach ($daftar_kota as $tc): ?>
+                                      <option value="<?php echo $tc['nama'] ?>"><?php echo $tc['nama'] ?></option>
                                     <?php endforeach ?>
                                   </select>
                               </div>
@@ -70,8 +70,8 @@
                               <label for="kota_penerima" class="col-sm-3">Kota Penerima</label>
                               <div class="col-sm-5">
                                   <select class="form-control">
-                                    <?php foreach ($daftar_kategori as $dk): ?>
-                                      <option value="<?php echo $dk['id_kategori'] ?>"><?php echo $dk['nama_kategori'] ?></option>
+                                    <?php foreach ($daftar_kota as $tc): ?>
+                                      <option value="<?php echo $tc['nama'] ?>"><?php echo $tc['nama'] ?></option>
                                     <?php endforeach ?>
                                   </select>
                               </div>
@@ -93,6 +93,12 @@
                                 <label for="berat_barang" class="col-sm-3">Berat</label>
                                     <div class="col-sm-5">
                                         <input type="text" class="form-control" id="berat_barang" placeholder="" name="berat_barang">
+                                    </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="berat_barang" class="col-sm-3">Biaya</label>
+                                    <div class="col-sm-5">
+                                        <input type="text" class="form-control" id="total_biaya" placeholder="" name="total_biaya">
                                     </div>
                             </div>
                             

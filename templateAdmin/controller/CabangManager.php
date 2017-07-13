@@ -9,11 +9,11 @@ class CabangManager extends Controller
 	{
 		include_once 'model/Cabang.php';
 		$mcabang = new Cabang();
-		$id_cabang = $_POST['id_cabang'];
+		//$id_cabang = $_POST['id_cabang'];
 		$nama = $_POST['nama'];
 		$alamat = $_POST['alamat'];
 		$telepon = $_POST['telepon'];
-		$pesan = $mcabang->tambahCabang($id_cabang,$nama,$alamat,$telepon);
+		$pesan = $mcabang->tambahCabang($nama,$alamat,$telepon);
 		return $pesan;
 	}
 	public function getDataUntukDetail()

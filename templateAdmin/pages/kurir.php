@@ -52,8 +52,8 @@
                                             <td><?= $kr['id_jeniskelamin'] ?></td>
                                             <td><?= $kr['alamat_kurir'] ?></td>
                                             <td><?= $kr['telepon'] ?></td>
-                                            <td><a href="edit_kurir.php?id=<?php echo $kr['id_kurir']?>" class="btn btn-primary btn-xs">Edit</a></td>
-                                            <td><a href="menghapus_kurir.php?id=<?php echo $kr['id_kurir']?>" class="btn btn-primary btn-xs">Hapus</a></td>
+                                            <td><a href="ubah_berita.php?id=<?php echo $kr['id_kurir']?>" class="btn btn-primary btn-xs">Edit</a></td>
+                                            <td><a href="ubah_berita.php?id=<?php echo $kr['id_kurir']?>" class="btn btn-primary btn-xs">Hapus</a></td>
                                         </tr>
                                         <?php
                                         $i++;

@@ -1,5 +1,5 @@
 <?php 
-include 'view/KurirUI.php';
+include 'view/kurirUI.php';
 
 $adm = new KurirUI();
 

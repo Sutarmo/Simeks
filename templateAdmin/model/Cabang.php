@@ -1,5 +1,7 @@
 <?php 
-
+/**
+* lokasi ada di web2/administrator/model/Berita.php
+*/
 include_once 'Model.php';
 class Cabang extends Model
 {	
@@ -34,7 +36,7 @@ class Cabang extends Model
 				return false;
 			}
 	}
-		public function tambahCabang($id_cabang,$nama,$alamat,$telepon,$id_admin=1)
+		public function tambahCabang($nama,$alamat,$telepon,$id_admin=1)
 	{
 		try
 		  {

@@ -15,7 +15,7 @@
                                     </div>
                             </div>
                             <div class="form-group">
-                                <label for="Nama" class="col-sm-3">Nama</label>
+                                <label for="nama" class="col-sm-3">Nama</label>
                                     <div class="col-sm-5">
                                         <input type="text" class="form-control" id="nama" placeholder="" name="nama">
                                     </div>
@@ -39,7 +39,7 @@
                                     </div>
                             </div>
                             <div class="form-group">
-                                <label for="telp" class="col-sm-3">No. Handphone</label>
+                                <label for="telepon" class="col-sm-3">No. Handphone</label>
                                     <div class="col-sm-5">
                                         <input type="char" class="form-control" id="telepon" placeholder="" name="telepon">
                                     </div>
